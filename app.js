@@ -14,7 +14,7 @@ const app = Vue.createApp({
         postcode: null,
         state: null,
         street: { name: null, nmber: null },
-        timezone: { discription: null, offset: null },
+        timezone: { description: null, offset: null },
       },
       name: { first: null, last: null, title: null },
       nat: null,
@@ -42,7 +42,7 @@ const app = Vue.createApp({
 			this.location.state = results[0].location.state
 			this.location.street.name = results[0].location.street.name
 			this.location.street.number = results[0].location.street.number
-			this.location.timezone.discription = results[0].location.timezone.discription
+			this.location.timezone.description = results[0].location.timezone.description
 			this.location.timezone.offset = results[0].location.timezone.offset
 			this.name.first = results[0].name.first
 			this.name.last = results[0].name.last
